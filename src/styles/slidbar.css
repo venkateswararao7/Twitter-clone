@@ -1,0 +1,43 @@
+.slide-option {
+    border-right: 1px solid var(--twitter--border);
+
+}
+
+.twitter-icon {
+    color: var(--twitter--color);
+    font-size: 40px !important;
+    margin-left: 3% !important;
+}
+
+.button {
+    color: white !important;
+    background-color: var(--twitter--color) !important;
+    border-radius: 20px !important;
+    font-weight: 900 !important;
+    margin-top: 20px !important;
+    padding: 20px;
+}
+
+.News {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .News {
+        display: block;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .slide-option {
+        border-right: none;
+        margin-left: none;
+        width: 60px;
+    }
+
+    .button {
+        font-weight: 700;
+        padding: 2px;
+        margin: 2px;
+    }
+}

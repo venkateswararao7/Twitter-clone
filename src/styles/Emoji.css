@@ -1,0 +1,19 @@
+.Emoji-container .MuiSvgIcon-root {
+    margin: 0.5rem;
+    color: var(--twitter--color);
+    cursor: pointer;
+}
+
+@media screen and ((min-width:390px)and (max-width:767px)) {
+    .Emoji-container .MuiSvgIcon-root {
+        margin: 0.2rem;
+    }
+
+}
+
+@media screen and (max-width:389px) {
+    .Emoji-container .MuiSvgIcon-root {
+        margin: 0.2rem;
+    }
+
+}

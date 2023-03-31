@@ -1,0 +1,35 @@
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 2px;
+}
+
+.option .slide-options {
+    font-size: 25px !important;
+    padding: 15px !important;
+}
+
+.option:hover {
+    background-color: var(--twitter--background);
+    border-radius: 20px;
+    transition: color 100s ease-out;
+}
+
+.option h2 {
+    display: inline;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:767px) {
+    .option {
+        margin-right: none;
+    }
+
+    .option h2 {
+        display: none;
+    }
+
+
+}

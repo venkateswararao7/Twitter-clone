@@ -1,0 +1,32 @@
+.LatestNews {
+    margin-top: 2rem;
+    background-color: var(--twitter--search);
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    width: 100%;
+    height: 550px;
+    overflow-y: auto;
+}
+
+.LatestNews::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.LatestNews h2 {
+    text-align: center;
+}
+
+.LatestNews ul li {
+    padding: 2px;
+    margin: 3px;
+}
+
+.LatestNews ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+    font-size: larger;
+}

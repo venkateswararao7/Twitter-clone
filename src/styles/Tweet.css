@@ -1,0 +1,162 @@
+.profile {
+    margin: 1rem;
+    display: flex;
+    padding: 3px;
+    border-bottom: 2px solid var(--twitter--border);
+}
+
+
+.Tweet-options {
+    margin-left: 1rem;
+
+}
+
+select {
+    border: none;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid var(--twitter--border);
+    background-color: var(---twitter--background);
+    color: var(--twitter--color);
+}
+
+.original-tweet .wishing textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    overflow: auto;
+
+}
+
+textarea::placeholder {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #c2b5b5;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.reply-option {
+    display: flex;
+}
+
+.reply-option .MuiSvgIcon-root {
+    color: var(--twitter--color);
+    padding-top: 3px;
+}
+
+.option-view h5 {
+    display: inline;
+    margin-top: 3px;
+    margin-left: 3px;
+    color: var(--twitter--color);
+    cursor: pointer;
+}
+
+.emoji {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+.emoji button {
+    background-color: var(--twitter--color);
+    border: var(--twitter--border);
+    border-radius: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    padding: 0.4rem;
+    position: absolute;
+    right: 5%;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.emoji button :hover {
+    background-color: var(--twitter--color);
+}
+
+@media screen and ((min-width:390px) and (max-width:767px)) {
+    .profile {
+        margin: 0px;
+    }
+
+    .Tweet-options {
+        margin: 0px;
+    }
+
+    .defult_pic {
+        display: none;
+    }
+
+
+
+    .emoji button {
+        margin-top: 0.3rem;
+        position: static;
+        display: block;
+    }
+
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .reply-option .MuiSvgIcon-root {
+        font-size: 1rem;
+    }
+
+    .option-view {
+        margin-top: 0px;
+        margin-left: 1px;
+    }
+
+}
+
+
+@media screen and (max-width:389px) {
+    .profile {
+        margin: 0px;
+    }
+
+    .Tweet-options {
+        margin: 0px;
+    }
+
+    .defult_pic {
+        display: none;
+    }
+
+
+
+    .emoji button {
+        margin-top: 0.3rem;
+        position: static;
+        display: block;
+    }
+
+    textarea::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .reply-option .MuiSvgIcon-root {
+        font-size: 1rem;
+    }
+
+    .option-view {
+        margin-top: 0px;
+        margin-left: 1px;
+    }
+
+    .emoji {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+
+    .emoji button {
+        width: 70px;
+    }
+
+}

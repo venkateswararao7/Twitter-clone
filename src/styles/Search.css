@@ -1,0 +1,48 @@
+.search {
+    margin-top: 2rem;
+    background-color: var(--twitter--search);
+    margin-left: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 20px;
+    display: flex;
+}
+
+.search form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    float: right;
+    padding-left: 10px;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: var(--twitter--search);
+}
+
+input[type="text"]:focus {
+    border: none;
+    outline: none;
+}
+
+.search-symbol {
+    /* position: absolute; */
+
+}
+
+.search button[type="submit"] {
+    border: none;
+    outline: none;
+    background-color: var(--twitter-background);
+    cursor: pointer;
+
+}
