@@ -5,6 +5,11 @@
     margin-right: 2px;
 }
 
+.links {
+    text-decoration: none;
+    color: black;
+}
+
 .option .slide-options {
     font-size: 25px !important;
     padding: 15px !important;

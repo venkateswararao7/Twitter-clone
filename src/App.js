@@ -1,16 +1,30 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import DefaultHome from "./components/DefaultHome";
+import News from "./components/News/News";
+import Notification from "./components/Notifications/Notification";
+import Bookmarks from "./components/Bookmark/Bookmark";
+import Message from "./components/Messages/Messages";
+import Profile from "./components/Profile/Profile";
+import Explore from './components/Explore/Explore';
 import './App.css';
-import Feed from './components/HomeFeed/Feed';
-import Slidebar from './components/Slidebar';
-import Trending from './components/TrendingFeed/Trending';
+
 function App() {
   return (
     <div className="App">
-      <div className='app-slide-bar'>
-        <Slidebar />
-      </div>
-      <Feed />
-      <Trending />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<DefaultHome />} />
+          <Route path="/Home" element={<DefaultHome />} />
+          <Route path="/News" element={<News />} />
+          <Route path="/Notification" element={<Notification />} />
+          <Route path='/Bookmarks' element={<Bookmarks />} />
+          <Route path="/Message" element={<Message />} />
+          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Explore" element={<Explore />} />
+        </Routes>
+
+      </BrowserRouter>
 
     </div>
   );

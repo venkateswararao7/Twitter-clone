@@ -1,5 +1,4 @@
-import React from 'react'
-import "../../styles/trending.css";
+import React from 'react';
 import LatestNews from './LatestNews';
 import Search from './Search';
 function Trending() {

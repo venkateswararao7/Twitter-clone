@@ -1,0 +1,18 @@
+.Explore {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.mid-level {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width:767px) {
+    .Explore {
+        margin-left: 0px;
+    }
+
+    .mid-level {
+        margin-left: 0px;
+    }
+}

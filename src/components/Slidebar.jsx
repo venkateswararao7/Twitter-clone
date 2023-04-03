@@ -22,9 +22,7 @@ export default function Slidebar() {
             <Icons text="Message" icon={MailOutlineRoundedIcon} />
             <Icons text="Bookmarks" icon={BookmarkBorderRoundedIcon} />
             <Icons text="Profile" icon={Person2OutlinedIcon} />
-            <div className='News' >
-                <Icons text="News" icon={NewspaperIcon} />
-            </div>
+            <Icons text="News" icon={NewspaperIcon} />
             <Icons text="More" icon={MoreHorizOutlinedIcon} />
             <Button variant="outlined" type="button" className='button' fullWidth> Tweet</Button>
         </div>

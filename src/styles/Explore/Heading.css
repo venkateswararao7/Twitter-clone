@@ -1,0 +1,117 @@
+.main-heading {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.main-heading .MuiSvgIcon-root {
+    font-size: 3rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.Heading .search {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.Explore-options {
+    display: flex;
+    border-bottom: 2px solid var(--twitter--border);
+
+}
+
+
+
+.Explore-options div {
+    font-size: large;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 5px;
+}
+
+.Explore-options div h2 {
+    margin-bottom: 0px;
+    font-weight: 350;
+}
+
+.Explore-options div :hover {
+    background-color: var(--twitter--background);
+    text-decoration: underline;
+    text-decoration-color: var(--twitter--color);
+    cursor: pointer;
+
+}
+
+.display-data {
+    width: 80%;
+    height: 900px;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.display-data ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    height: 900px;
+    overflow: auto;
+    cursor: pointer;
+    color: black;
+}
+
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #b6b6b6;
+}
+
+@media screen and (max-width:360px) {
+    .main-heading .MuiSvgIcon-root {
+        font-size: 1.5rem;
+        margin-top: 1.7rem;
+    }
+
+    .Explore-options div {
+        font-size: 0.7rem;
+        margin-left: 2px;
+        margin-right: 2px;
+
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .display-data ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and ((min-width:361px) and (max-width:767px)) {
+    .main-heading .MuiSvgIcon-root {
+        font-size: 1.5rem;
+        margin-top: 1.8rem;
+    }
+
+    .Explore-options div {
+        font-size: 0.7rem;
+        margin-left: 2px;
+        margin-right: 2px;
+
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .display-data ul li a {
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}

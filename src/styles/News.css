@@ -1,0 +1,8 @@
+.News {
+    display: flex;
+}
+
+.NewsFeed {
+    width: 70%;
+    height: min-content;
+}
