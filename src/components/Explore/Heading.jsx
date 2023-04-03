@@ -40,7 +40,7 @@ function Heading() {
                 <Search />
             </div>
             <div className='Explore-options'>
-                <div className='mobile'>
+                <div className='mobile' onClick={() => setSelectedNews(trending)}>
                     <h2>For You</h2>
                 </div>
                 <div onClick={() => setSelectedNews(trending)}>
@@ -54,7 +54,6 @@ function Heading() {
                 </div>
             </div>
             <div className='display-data'>
-
                 <ul>
                     {selectedNews.map(article => (
                         <li key={article.url}>

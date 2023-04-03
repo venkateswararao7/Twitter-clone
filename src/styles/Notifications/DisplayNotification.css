@@ -1,0 +1,59 @@
+.Notifications .Heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Notifications .Heading .MuiSvgIcon-root {
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.Notification-options {
+    display: flex;
+    justify-content: row;
+    padding: 0px;
+    margin: 0px
+}
+
+.Notification-options .Noti-option h4 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 500;
+}
+
+.Notification-options .Noti-option h4:hover {
+    background-color: var(--twitter--background);
+}
+
+.Notification-options .Noti-option:hover {
+    border-bottom: 4px solid var(--twitter--color);
+}
+
+.Notification-options {
+    border-bottom: 2px solid var(--twitter--border);
+}
+
+
+@media screen and (max-width:321px) {
+    .Notification-options .Noti-option h4 {
+        padding-left: 1.3rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+    }
+}
+
+@media screen and ((min-width:322px) and (max-width:767px)) {
+    .Notification-options .Noti-option h4 {
+        padding-left: 1.8rem;
+        padding-right: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
+    }
+}

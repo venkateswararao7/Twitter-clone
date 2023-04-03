@@ -1,0 +1,32 @@
+.Main-Notifiaction {
+    display: flex;
+
+}
+
+.mid-Notification {
+    margin-left: 1rem;
+    display: flex;
+}
+
+.mid-Notification .noti {
+    margin-right: 1rem;
+}
+
+.Main-Notifiaction .side-news {
+    width: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .side-news {
+        display: none;
+    }
+
+    .mid-Notification {
+        margin-left: 0px;
+        display: flex;
+    }
+
+    .mid-Notification .noti {
+        margin-right: 0px;
+    }
+}
