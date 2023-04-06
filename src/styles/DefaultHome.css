@@ -1,3 +1,26 @@
+body {
+    --twitter--color: #50b7f5;
+    --twitter--background: #e6ecf0;
+    --twitter--border: rgb(220, 220, 220);
+    --twitter--search: #a0b7bd;
+}
+
+.App {
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width:767px) {
+    .App {
+        overflow-x: hidden;
+    }
+
+}
+
 @media screen and (max-width:1000px) {
     .Home-news {
         display: none;

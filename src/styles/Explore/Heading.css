@@ -1,7 +1,7 @@
 .main-heading {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 80%;
 }
 
 .main-heading .MuiSvgIcon-root {
@@ -14,6 +14,7 @@
     padding: 0px;
     margin: 0px;
     background-color: white;
+    width: 99%;
 }
 
 
@@ -116,7 +117,7 @@ body::-webkit-scrollbar-thumb {
 
     }
 
-    .mobile {
+    .mobile-view {
         display: block;
     }
 

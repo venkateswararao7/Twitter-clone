@@ -1,0 +1,58 @@
+.MidBookMark {
+    width: 90%;
+}
+
+.MidBookMark h1 {
+    font-weight: 600;
+}
+
+.MidBookMark .image {
+    width: 400px;
+    height: 400px;
+}
+
+.MidBookMark .image img {
+    width: 500px;
+    height: 300px;
+    margin-left: 0px;
+}
+
+.MidBookMark .image .messages {
+    margin-left: 4rem;
+    margin-top: 0px;
+}
+
+.MidBookMark .image .messages h2 {
+    margin-top: 0px;
+    margin-bottom: 0px
+}
+
+.MidBookMark .image .messages p {
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+@media screen and ((min-width:390px) and (max-width:767px)) {
+    .MidBookMark .image img {
+        width: 300px;
+        height: 150px;
+    }
+
+    .MidBookMark .image .messages {
+        margin-left: 0px;
+        margin-right: 6rem;
+    }
+
+}
+
+@media screen and (max-width:389px) {
+    .MidBookMark .image img {
+        width: 200px;
+        height: 100px;
+    }
+
+    .MidBookMark .image .messages {
+        margin-left: 0px;
+        margin-right: 8rem;
+    }
+}

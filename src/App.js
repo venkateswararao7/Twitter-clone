@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Login from './components/Login/Login';
 import DefaultHome from "./components/DefaultHome";
 import News from "./components/News/News";
 import Notification from "./components/Notifications/Notification";
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
+          <Route path="/Login" element={<Login />} />
           <Route path="/" element={<DefaultHome />} />
           <Route path="/Home" element={<DefaultHome />} />
           <Route path="/News" element={<News />} />

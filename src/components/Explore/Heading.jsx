@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import SettingsSuggestOutlinedIcon from '@mui/icons-material/SettingsSuggestOutlined';
 import "../../styles/Explore/Heading.css";
 import Search from "../TrendingFeed/Search";
+import DisplayData from './DisplayData';
 
 function Heading() {
     const [sportsNews, setSportsNews] = useState([]);
@@ -10,16 +11,16 @@ function Heading() {
     const [foryou, setForYou] = useState([]);
 
     useEffect(() => {
-        fetch('https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=e52dec99b94545b281e7fadae8d2a34e')
+        fetch('https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=3bee02545d414340877319f36c499ee6')
             .then(response => response.json())
             .then(data => setSportsNews(data.articles));
-        fetch('https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=e52dec99b94545b281e7fadae8d2a34e')
+        fetch('https://newsapi.org/v2/top-headlines?country=in&category=entertainment&apiKey=3bee02545d414340877319f36c499ee6')
             .then(response => response.json())
             .then(data => setEntertainment(data.articles));
-        fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=e52dec99b94545b281e7fadae8d2a34e')
+        fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-03-05&sortBy=publishedAt&apiKey=3bee02545d414340877319f36c499ee6')
             .then(response => response.json())
             .then(data => setTrending(data.articles));
-        fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-03-03&sortBy=publishedAt&apiKey=e52dec99b94545b281e7fadae8d2a34e')
+        fetch('https://newsapi.org/v2/everything?q=tesla&from=2023-03-05&sortBy=publishedAt&apiKey=3bee02545d414340877319f36c499ee6')
             .then(response => response.json())
             .then(data => setForYou(data.articles));
     }, []);
@@ -40,10 +41,10 @@ function Heading() {
                 <Search />
             </div>
             <div className='Explore-options'>
-                <div className='mobile' onClick={() => setSelectedNews(trending)}>
+                <div className='mobile-view' onClick={() => setSelectedNews(trending)}>
                     <h2>For You</h2>
                 </div>
-                <div onClick={() => setSelectedNews(trending)}>
+                <div onClick={() => setSelectedNews(foryou)}>
                     <h2>Trending</h2>
                 </div>
                 <div onClick={() => setSelectedNews(sportsNews)}>
@@ -54,13 +55,9 @@ function Heading() {
                 </div>
             </div>
             <div className='display-data'>
-                <ul>
-                    {selectedNews.map(article => (
-                        <li key={article.url}>
-                            <a href={article.url} target="_blank" rel="noopener noreferrer">{article.title}</a>
-                        </li>
-                    ))}
-                </ul>
+
+                <DisplayData items={selectedNews} />
+
             </div>
         </div>
     )

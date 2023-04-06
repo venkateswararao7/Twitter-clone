@@ -1,0 +1,45 @@
+.NewPersons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NewPersons .SelectPerson {
+    margin: 4rem;
+
+    padding: 2rem;
+}
+
+.NewPersons .SelectPerson h2 {
+    font-weight: 900;
+    font-size: x-large;
+    padding: 2px;
+    margin-bottom: 0px;
+}
+
+.NewPersons .SelectPerson .message-description p {
+    margin-top: 0px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.NewPersons .SelectPerson .Button {
+    margin-top: 1rem;
+    display: inline;
+}
+
+.NewPersons .SelectPerson .Button h3 {
+    display: inline;
+    padding: 1rem;
+    /* margin: 1rem; */
+    background-color: var(--twitter--color);
+    border-radius: 50px;
+    color: white;
+}
+
+@media screen and (max-width:767px) {
+    .NewPersons {
+        display: none;
+    }
+}
