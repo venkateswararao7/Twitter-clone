@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
-import Image from './Image';
-import Emoji from './HomeFeed/Emoji';
+import Image from '../Image';
+import Emoji from './Emoji';
 import PublicIcon from '@mui/icons-material/Public';
-import Profile from "../images/default_profile.png";
-import "../styles/Tweet.css";
+import Profile from "../../images/default_profile.png";
+import "../../styles/HomeFeed/Tweet.css";
 
 function Tweet() {
     return (

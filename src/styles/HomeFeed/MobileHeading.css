@@ -1,0 +1,25 @@
+.mobile-heading {
+    width: 100%;
+
+}
+
+.MobileHeading {
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.MobileHeading .MuiSvgIcon-root {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.MobileHeading .twitter .MuiSvgIcon-root {
+    color: var(--twitter--color);
+}
+
+@media screen and (min-width:767px) {
+    .MobileHeading {
+        display: none;
+    }
+}

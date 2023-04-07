@@ -1,0 +1,44 @@
+.bottom-options {
+    display: none;
+}
+
+@media screen and ((min-width:375px) and (max-width:767px)) {
+    .Feeds {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        overflow-y: hidden;
+    }
+
+    .Feeds .NewFeed {
+
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        overflow-y: scroll;
+    }
+
+    .bottom-options {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:374px) {
+    .Feeds {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .Feeds .NewFeed {
+        background-color: aqua;
+        width: 100%;
+        height: 80%;
+        overflow: auto;
+        overflow-y: scroll;
+    }
+
+    .bottom-options {
+        display: flex;
+    }
+}

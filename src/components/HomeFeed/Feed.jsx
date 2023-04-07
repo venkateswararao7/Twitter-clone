@@ -1,13 +1,13 @@
 import React from 'react';
-import Tweet from '../Tweet';
 import Home from './Home';
 import NewFeed from './NewFeed';
-import "../../styles/Feed.css";
+import "../../styles/HomeFeed/Feed.css";
 function Feed() {
     return (
         <div className='Feed'>
-            <Home />
-            <Tweet />
+            <div className='Feed-home'>
+                <Home />
+            </div>
             <NewFeed />
         </div>
     )

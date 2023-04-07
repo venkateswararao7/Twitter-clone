@@ -12,4 +12,4 @@ function Trending() {
     )
 }
 
-export default Trending
+export default Trending;

@@ -1,6 +1,14 @@
-.Home-Heading h2 {
+.Home-Heading {
+    position: sticky;
+}
+
+.Home-Heading .Heading h2 {
     padding-left: 2rem;
     cursor: pointer;
+}
+
+.Home-Heading .Heading .MobileHeading {
+    display: none;
 }
 
 .Home-option {
@@ -41,15 +49,23 @@
 }
 
 
-@media screen and (max-width:360px) {
-    .Home-Heading h2 {
-        font-size: 1.5rem;
-        font-weight: 400;
+@media screen and (max-width:400px) {
+    .Home-Heading .Heading h2 {
+        display: none;
+    }
+
+    .Home-Heading .Home-option {
+        border-top: 2px solid var(--twitter--border);
+    }
+
+    .Home-Heading .Heading .MobileHeading {
+        display: flex;
     }
 
     .Home-Heading .Home-option .Home-Button1 h2 {
         padding: 2px;
         font-size: medium;
+        margin-left: 1rem;
     }
 
     .Home-Heading .Home-option .Home-Button2 h2 {
@@ -61,7 +77,20 @@
 
 }
 
-@media screen and ((min-width:361px) and (max-width:767px)) {
+@media screen and ((min-width:401px) and (max-width:767px)) {
+    .Home-Heading .Heading h2 {
+        display: none;
+    }
+
+    .Home-Heading .Home-option {
+        border-top: 2px solid var(--twitter--border);
+    }
+
+    .Home-Heading .Heading .MobileHeading {
+        display: flex;
+
+    }
+
     .Home-Heading>.Home-Button {
         padding: 0.5rem;
         margin: 1rem;
@@ -71,6 +100,7 @@
     .Home-Heading .Home-option .Home-Button1 h2 {
         padding: 5px;
         font-size: large;
+        margin-left: 1rem;
     }
 
     .Home-Heading .Home-option .Home-Button2 h2 {

@@ -11,18 +11,26 @@ body {
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 
 @media screen and (max-width:767px) {
     .App {
         overflow-x: hidden;
+
     }
 
 }
 
 @media screen and (max-width:1000px) {
     .Home-news {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .app-slide-bar {
         display: none;
     }
 }

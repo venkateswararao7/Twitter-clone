@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../styles/Emoji.css";
+import "../../styles/HomeFeed/Emoji.css";
 import CollectionsIcon from '@mui/icons-material/Collections';
 import GifBoxIcon from '@mui/icons-material/GifBox';
 import PollIcon from '@mui/icons-material/Poll';

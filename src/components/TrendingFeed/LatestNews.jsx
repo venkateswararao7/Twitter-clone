@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../../styles/LatestNews.css';
+import '../../styles/TrendingFeed/LatestNews.css';
 
 function LatestNews() {
     const [news, setNews] = useState([]);

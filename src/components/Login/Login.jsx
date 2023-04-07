@@ -1,19 +1,34 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { auth, provider } from "./FireBase";
+import { signInWithPopup } from 'firebase/auth';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import Google from "../../images/Google.png";
 import "../../styles/Login/Login.css";
+import DefaultHome from "../DefaultHome";
 
 function Login() {
-    const [userId, setUserId] = useState("");
 
+    const [userId, setUserId] = useState("");
     function handleChange(event) {
         setUserId(event.target.value);
         console.log(userId)
     }
 
+    function handleClick() {
+        signInWithPopup(auth, provider)
+            .then((data) => {
+                setUserId(data.user.email);
+                localStorage.setItem("email", data.user.email);
+                window.location.href = "/DefaultHome";
+            })
+    }
 
+    useEffect(() => {
+        setUserId(localStorage.getItem("email"));
+
+    }, []);
 
     function handleSubmit(event) {
         event.preventDefault();
@@ -34,7 +49,8 @@ function Login() {
                 </div>
                 <div className='google-account'>
                     <h1>Sign in to Twitter</h1>
-                    <div className='google'>
+
+                    <div onClick={handleClick} className='google'>
                         <img src={Google} alt="Google log" draggable="false" />
                         <h3>Sign with Google </h3>
                     </div>
@@ -66,7 +82,8 @@ function Login() {
                     </div>
                 </div>
             </div>
-        </div>
+
+        </div >
     );
 }
 
