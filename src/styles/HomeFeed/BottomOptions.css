@@ -1,8 +1,8 @@
 .mobile-slidebar {
     display: flex;
     width: 90%;
-    height: 100%;
-    /* justify-content: space-between; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mobile-slidebar .MuiSvgIcon-root {
@@ -12,6 +12,13 @@
 }
 
 @media screen and (max-width:360px) {
+    .mobile-slidebar {
+        display: flex;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .mobile-slidebar .MuiSvgIcon-root {
         color: black;
         margin-right: 1.2rem;

@@ -11,9 +11,15 @@ import DefaultHome from "../DefaultHome";
 function Login() {
 
     const [userId, setUserId] = useState("");
+    const [userName, setUserName] = useState("");
+
     function handleChange(event) {
         setUserId(event.target.value);
-        console.log(userId)
+
+    }
+
+    function handleNameChange(event) {
+        setUserName(event.target.value);
     }
 
     function handleClick() {
@@ -21,7 +27,7 @@ function Login() {
             .then((data) => {
                 setUserId(data.user.email);
                 localStorage.setItem("email", data.user.email);
-                window.location.href = "/DefaultHome";
+                window.location.href = "/Home";
             })
     }
 
@@ -32,8 +38,9 @@ function Login() {
 
     function handleSubmit(event) {
         event.preventDefault();
-
-        console.log("Logging in...");
+        if (userId && userName) {
+            window.location.href = "/Home";
+        }
     }
 
     return (
@@ -72,15 +79,12 @@ function Login() {
                 </div>
                 <div className='user-login'>
                     <form onSubmit={handleSubmit}>
-                        <input type="text" name="login_id" value={userId} onChange={handleChange} placeholder='Phone, Email, or Username' />
+                        <input type="text" name="login_id" value={userId} onChange={handleChange} placeholder=' Email' />
+                        <input type="text" name="user-name" value={userName} onChange={handleNameChange} placeholder='Name' />
                         <button type='submit'>Next</button>
                     </form>
                 </div>
-                <div className='forgot'>
-                    <div>
-                        <h2>Forgot password?</h2>
-                    </div>
-                </div>
+
             </div>
 
         </div >
