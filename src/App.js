@@ -8,6 +8,7 @@ import Bookmarks from "./components/Bookmark/Bookmark";
 import Message from "./components/Messages/Messages";
 import Profile from "./components/Profile/Profile";
 import Explore from './components/Explore/Explore';
+import LoadingTwiiter from "./components/Login/LoadingTwiiter";
 import './App.css';
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<LoadingTwiiter />} />
+          <Route path="/Login" element={<Login />} />
           <Route path="/Home" element={<DefaultHome />} />
           <Route path="/Home" element={<DefaultHome />} />
           <Route path="/News" element={<News />} />

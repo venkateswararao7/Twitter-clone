@@ -1,0 +1,8 @@
+.Twitter-loading {
+    margin: auto;
+}
+
+.Twitter-loading .twitter .MuiSvgIcon-root {
+    font-size: 7rem;
+    color: var(--twitter--color);
+}

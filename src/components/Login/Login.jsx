@@ -6,7 +6,7 @@ import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import Google from "../../images/Google.png";
 import "../../styles/Login/Login.css";
-import DefaultHome from "../DefaultHome";
+
 
 function Login() {
 
