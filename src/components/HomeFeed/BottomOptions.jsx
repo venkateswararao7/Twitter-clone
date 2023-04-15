@@ -16,19 +16,19 @@ function BottomOptions() {
     return (
         <div className='mobile-slidebar'>
             <Link to="/Home" element={<DefaultHome />}>
-                <HomeOutlinedIcon />
+                <HomeOutlinedIcon style={{ color: 'black' }} />
             </Link>
             <Link to="/News" element={<News />}>
-                <SearchOutlinedIcon />
+                <SearchOutlinedIcon style={{ color: 'black' }} />
             </Link>
             <Link to="/Explore" element={<Explore />}>
-                <TravelExploreIcon />
+                <TravelExploreIcon style={{ color: 'black' }} />
             </Link>
             <Link path="/Notification" element={<Notification />} >
-                <NotificationsNoneOutlinedIcon />
+                <NotificationsNoneOutlinedIcon style={{ color: 'black' }} />
             </Link>
             <Link to="/Message" element={<Message />}>
-                <EmailOutlinedIcon />
+                <EmailOutlinedIcon style={{ color: 'black' }} />
             </Link>
         </div >
     )

@@ -1,27 +1,18 @@
 .mobile-slidebar {
     display: flex;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.mobile-slidebar .MuiSvgIcon-root {
-    color: black;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
-}
-
-@media screen and (max-width:360px) {
+@media (min-width: 767px) {
     .mobile-slidebar {
-        display: flex;
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .mobile-slidebar .MuiSvgIcon-root {
-        color: black;
-        margin-right: 1.2rem;
-        margin-left: 1.2rem;
+        display: none;
     }
 }

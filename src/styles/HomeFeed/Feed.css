@@ -2,3 +2,80 @@
     border-right: 1px solid var(--twitter--border);
     border-left: 1px solid var(--twitter--border);
 }
+
+.Feed .newFeed {
+    overflow: auto;
+    overflow-y: scroll;
+    width: 100%;
+
+}
+
+.Feed .mobile-options {
+    display: none;
+}
+
+@media screen and ((min-width:389px) and (max-width:400px)) {
+    .Feed .mobile-options {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Feed .newFeed {
+        overflow: auto;
+        overflow-y: scroll;
+        background-color: aqua;
+        width: 100%;
+
+    }
+}
+
+@media screen and ((min-width:401px) and (max-width:767px)) {
+    .Feed .mobile-options {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .Feed .newFeed {
+        overflow: auto;
+        overflow-y: scroll;
+        background-color: aqua;
+        width: 100%;
+
+    }
+}
+
+@media screen and ((min-width:321px) and (max-width:389px)) {
+    .Feed .mobile-options {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .Feed .newFeed {
+        overflow: auto;
+        overflow-y: scroll;
+        background-color: aqua;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width:320px) {
+    .Feed .mobile-options {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0px;
+    }
+
+    .Feed .newFeed {
+        overflow: auto;
+        overflow-y: scroll;
+        background-color: aqua;
+        width: 100%;
+
+    }
+}

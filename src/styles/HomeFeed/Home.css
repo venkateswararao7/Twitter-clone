@@ -19,7 +19,7 @@
 .Home-Heading .Home-option .Home-Button1 h2 {
     display: inline;
     font-weight: 400;
-    padding-right: 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .Home-Heading .Home-option .Home-Button2 h2 {
@@ -65,13 +65,13 @@
     .Home-Heading .Home-option .Home-Button1 h2 {
         padding: 2px;
         font-size: medium;
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
 
     .Home-Heading .Home-option .Home-Button2 h2 {
         padding: 2px;
         font-size: medium;
-        margin-right: 18rem;
+        margin-right: 15rem;
     }
 
 
