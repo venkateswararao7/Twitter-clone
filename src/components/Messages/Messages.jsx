@@ -12,7 +12,6 @@ function Messages() {
             <div className='mobile'>
                 <NewPersons />
             </div>
-
         </div>
     )
 }

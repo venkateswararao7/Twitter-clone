@@ -6,6 +6,7 @@ import Profile from "../../images/default_profile.png";
 import "../../styles/HomeFeed/Tweet.css";
 
 function Tweet() {
+
     return (
         <Fragment >
             <div className="profile">

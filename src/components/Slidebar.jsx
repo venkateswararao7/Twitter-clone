@@ -18,7 +18,7 @@ export default function Slidebar() {
     return (
         <div className='slide-option'>
             <Link to="/Home" className='links'><TwitterIcon className='twitter-icon' /></Link>
-            <Link to="/Home" className='links'><Icons text="Home" icon={HomeRoundedIcon} active={true} /></Link>
+            <Link to="/Home" className='links'><Icons text="Home" icon={HomeRoundedIcon} /></Link>
             <Link to="/Explore" className='links'><Icons text="Explore" icon={TagOutlinedIcon} /></Link>
             <Link to="/Notification " className='links'><Icons text="Notification" icon={NotificationsNoneRoundedIcon} /></Link>
             <Link to="/Message " className='links'><Icons text="Message" icon={MailOutlineRoundedIcon} /></Link>

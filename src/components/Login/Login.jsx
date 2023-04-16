@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { auth, provider } from "./FireBase";
-import { signInWithPopup } from 'firebase/auth';
+import { signInWithPopup, signInWithPhoneNumber } from 'firebase/auth';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
-import AppleIcon from '@mui/icons-material/Apple';
+import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import Google from "../../images/Google.png";
 import "../../styles/Login/Login.css";
 
@@ -12,10 +12,11 @@ function Login() {
 
     const [userId, setUserId] = useState("");
     const [userName, setUserName] = useState("");
+    const [mobileNumber, setMobileNumber] = useState("");
+    const [verificationId, setVerificationId] = useState("");
 
     function handleChange(event) {
         setUserId(event.target.value);
-
     }
 
     function handleNameChange(event) {
@@ -31,9 +32,21 @@ function Login() {
             })
     }
 
+    function handleMobileNumberChange(event) {
+        setMobileNumber(event.target.value);
+    }
+
+    function handleMobileLogin() {
+        const phoneNumber = `+${mobileNumber}`;
+        const appVerifier = window.recaptchaVerifier;
+        signInWithPhoneNumber(auth, phoneNumber, appVerifier)
+            .then((confirmationResult) => {
+                setVerificationId(confirmationResult.verificationId);
+            });
+    }
+
     useEffect(() => {
         setUserId(localStorage.getItem("email"));
-
     }, []);
 
     function handleSubmit(event) {
@@ -62,10 +75,10 @@ function Login() {
                         <h3>Sign with Google </h3>
                     </div>
                 </div>
-                <div className='Apple-account'>
+                <div className='Apple-account' onClick={handleMobileLogin}>
                     <div className='Apple'>
-                        <AppleIcon />
-                        <h3>Sign with Apple</h3>
+                        <PhoneAndroidOutlinedIcon />
+                        <h3>Sign with Mobile Number</h3>
                     </div>
                 </div>
                 <div className='or'>

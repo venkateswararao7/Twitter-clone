@@ -3,6 +3,7 @@
     display: flex;
     padding: 3px;
     border-bottom: 2px solid var(--twitter--border);
+    z-index: 1;
 }
 
 
@@ -59,6 +60,7 @@ textarea::-webkit-scrollbar {
     display: flex;
     position: relative;
     text-align: center;
+    z-index: 1;
 }
 
 .emoji button {
