@@ -1,0 +1,20 @@
+.ProfileHeading .name {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.ProfileHeading .name h3 {
+    display: inline;
+    margin: 0px;
+    margin-right: 2rem;
+}
+
+.ProfileHeading .MuiSvgIcon-root {
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.ProfileHeading .profile {
+    position: absolute;
+}

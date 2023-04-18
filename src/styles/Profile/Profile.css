@@ -1,0 +1,19 @@
+.profile {
+    display: flex;
+
+}
+
+
+.profile .ourProfile {
+    border-right: 2px solid var(--twitter--border);
+}
+
+@media screen and (max-width:767px) {
+    .Trending-news {
+        display: none;
+    }
+
+    .profiles {
+        display: none;
+    }
+}

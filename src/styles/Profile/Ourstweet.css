@@ -1,0 +1,17 @@
+.oursTweet .Notification-options .Noti-option h4 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.oursTweet .Tweets-Feed {
+    height: 270px;
+    width: 600px;
+    overflow-y: scroll;
+
+}
+
+.oursTweet .Tweets-Feed ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+}

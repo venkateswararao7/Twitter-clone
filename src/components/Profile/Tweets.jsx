@@ -1,19 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../Login/FireBase';
-import { collection, getDocs } from "firebase/firestore";
+import { collectionGroup, getDocs, where } from "firebase/firestore";
 
-function DataBaseFeed() {
+function Tweets() {
     const [users, setUsers] = useState([]);
+    const [emailId, setEmailId] = useState("");
+
+    useEffect(() => {
+        setEmailId(localStorage.getItem("emailId"));
+    }, []);
 
     useEffect(() => {
         const getUsers = async () => {
-            const querySnapshot = await getDocs(collection(db, 'tweets'));
+            const q = collectionGroup(db, 'tweet');
+            const querySnapshot = await getDocs(where(q, 'emailId', '==', emailId));
             const data = querySnapshot.docs.map(doc => doc.data());
             setUsers(data);
         };
 
         getUsers();
-    }, []);
+    }, [emailId]);
 
     return (
         <div className='DataBaseFeed'>
@@ -27,4 +33,4 @@ function DataBaseFeed() {
     );
 }
 
-export default DataBaseFeed;
+export default Tweets;
